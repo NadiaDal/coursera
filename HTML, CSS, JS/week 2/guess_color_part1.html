@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script >
+
+            var target;
+            var target_index;
+            var guess_input;
+            var colors;
+            var finished = false;
+            var all_colors = ["aqua", "black", "cyan", "bisque", "coral", "gold",
+                "green", "lime", "linen", "navy", "pery", "plum", "red", "blue",
+                "tan", "teal", "white", "yellow", "silver", "pink", "olive"];
+            function do_game() {
+                colors = get_uniq_colors();
+                console.log(colors.join());
+                target_index = Math.floor(Math.random() * colors.length)
+                target = colors[target_index];
+                alert(target);
+
+                while (!finished) {
+                    guess_input = prompt("I am thinking of one of these colors:\n\ "
+                            + colors.join() + "\n\ " +
+                            "What color I am thinking of?");
+                    if (guess_input == target) {
+                        finished = true;
+
+                        myBody = document.getElementsByTagName("body")[0];
+                        myBody.style.background = target;
+                        alert("You got it!");
+
+                    }
+                }
+            }
+
+            function get_uniq_colors() {
+                var get_colors = new Array();
+                var set_index = new Array();
+
+                for (var i = 0; i < 10; i++) {
+                    do {
+                        var random_id = Math.floor(Math.random() * all_colors.length);
+                    }
+                    while (!uniq_id(set_index, random_id))
+                    {
+                    }
+                    get_colors.push(all_colors[random_id]);
+                    set_index.push(random_id);
+
+                }
+                console.log(get_colors.length);
+                console.log(get_colors.join());
+
+                return get_colors.sort();
+            }
+
+            function uniq_id(array, id) {
+                for (var i = 0; i < array.length; i++) {
+                    if (array[i] == id) {
+                        return false;
+                    }
+                }
+                return true;
+            }
+
+        </script>
+    </head>
+
+    <body onload="do_game()">
+
+    </body>
+</html>

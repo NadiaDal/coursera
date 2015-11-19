@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            p {color: red;}
+            .head {color: blue;}
+        </style>
+    </head>
+
+    <body>
+        <h1>Please Enter Your Details For Our Dating Website!</h1>
+        <form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" 
+              method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Your face</legend>
+                <label for="imagetoUpload">Your image: </label>
+                <input type="file" name="imagetoUpload" required>
+                <br>
+                <label for="imagePreview"> Image preview: </label>
+                <img id="preview" name ="imagePreview">
+            </fieldset>
+            <fieldset>
+                <legend>Your general details</legend>
+                <label for="name"> Name: </label>
+                <input type="text" name="name" placeholder="Hear your full name" required>
+                <br>
+                <label for="gender">Gender: </label>
+                <input type="radio" name="gender" value="male" required> Male
+                <input type="radio" name="gender" value="female" required> Female
+                <br>
+                <label for="age">Age: </label>
+                <input type="number" min="0" max="99" step="1" value="18" name="age" required>
+                <br>
+                <label for="birth">Date of birth: </label>
+                <input type="date" name="birth">
+                <br>
+                <label for="color">Favorite color: </label>
+                <input type="color" name="color">
+                <br>
+                <label for="country">Country: </label>
+                <select name="country">
+                    <option value="">Poland</option>
+                    <option value="">Germany</option>
+                    <option value="">Austria</option>
+                    <option value="">Italy</option>
+                    <option value="">Spain</option>
+                    <option value="">Ukraine</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Your indicators</legend>
+                <label for="height">Height: </label>
+                Short <input type="range" min="0" max="100" step="5" value="50" name="height"> Tall
+                <br>
+                <label for="salary">Salary:</label>
+                Poor <input type="range" min="0" max="100" step="5" value="50" name="salary"> Rich
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Your contact information</legend>
+                <label for="email">Email: </label>
+                <input type="email" name="email">
+                <br>
+                <label for="mob">Mobile: </label>
+                <input type="tel" name="mob">
+                <br>
+                <label for="address">Address: </label>
+                <textarea name="address"></textarea>
+                <br>
+                <label for="contact">Method to contact you: </label>
+                <input type="checkbox" name="contact" value="Email">Email
+                <input type="checkbox" name="contact" value="Whatsapp">Whatsapp
+                <input type="checkbox" name="contact" value="In-app chat">In-app chat
+                <br>
+            </fieldset>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>

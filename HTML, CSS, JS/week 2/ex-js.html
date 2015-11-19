@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body onload="check_age()">
+        <!--
+        <script>
+            var g=[];
+            alert("type : " + typeof g);
+        </script>
+        
+        <script>
+         alert("Hello!");
+         if(confirm("Whant to look at my blog?"))
+             document.location.href = "http://localhost/blog/";
+         var user_name;
+         user_name=prompt("what is your name?");
+         document.write("Welcome! " + user_name);
+        </script>
+        -->
+        <script>
+            function check_age(){
+                if(age_us() < 18) {
+                    alert("Please go to ..");
+                } else {
+                    document.location.href = "http://localhost/blog/";
+                }
+            }
+            function age_us(){
+                var age_str, age;
+                age_str=prompt("What is your age?");
+                age=pareInt(age_str);
+                return age;
+            }
+        </script>
+    </body>
+</html>
