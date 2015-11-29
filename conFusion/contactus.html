@@ -13,6 +13,13 @@
         <link href="css/bootstrap-social.css" rel="stylesheet">
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <link href="css/mystyle.css" rel="stylesheet">
+    <script>
+    function go_reserve(){
+    document.location.href = "index.html#table-reserve";
+    }
+    document.getElementById("btn-res").addEventListener("click") = go_reserve();
+    
+</script>
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -70,6 +77,15 @@
                         <li class="active"><a href="/home/nadia/NetBeansProjects/conFusion/contactus.html">
                                 <i class="fa fa-envelope-o"></i> Contact us</a></li>
                     </ul>
+                    
+                             <form class="navbar-form navbar-right">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Email">
+                            <input type="text" class="form-control" placeholder="Password">
+                            <input type="checkbox" > <span style="color:#fff" class="">Remember me</span>
+                        </div>
+                        <button type="submit" class="btn btn-sign">Sign in</button>
+                    </form>
                 </div>
             </div>
         </nav>  
@@ -85,7 +101,16 @@
                         <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                     </div>
                     <div class="col-xs-12 col-sm-4">
-                        <img src="img/logo.png" class="img-responsive">
+                         <div class="row">
+                            <div class="col-xs-12 col-sm-6">
+                                <img src="img/logo.png" class="img-responsive">
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <button id="btn-res" class="btn-reserve" onclick="go_reserve()">
+                                    <span style="color:#fff">Reserve table</span>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
