@@ -1,0 +1,45 @@
+Instructions
+
+In this assignment you will use the JavaScript methods to control the showing and hiding of the modals in the index.html page. You will replace the data-* attributes of the buttons and instead add JavaScript method to control the modals.
+Instructionsменьше 
+Objectives and Outcomes
+In this assignment, you will continue to work with the website that you have been developing in the exercises. You will edit the home page (index.html). You will start with the current home page at the end of the last exercise in this module. At the end of this assignment, you should have completed the following tasks:
+Removed the data-* attributes from the Reserve Table button and the Login link in the Navbar that control the two modals.
+Updated the button and the link so that they will trigger the appropriate JavaScript code when clicked.
+Included appropriate JavaScript code using the modal methods to toggle the showing and hiding of the modals when the two buttons are clicked.
+
+Assignment Requirements
+
+This assignment requires you to complete the following three tasks. Detailed instructions for each task are given below.
+
+Task 1
+In this task you will be removing the data-* attributes from the Reserve Table button in the Jumbotron that enable the toggling of the Reserve Table modal. Similarly you will also remove the data-* attributes from the Login link in the Navbar that triggers the Login modal.
+
+Task 2
+In this task you will add appropriate JavaScript code to the page so that the Reserve Table modal will be shown/hidden when the Reserve Table button is clicked:
+You will add the appropriate JavaScript code to the end of the page.
+You will update the button so that the modal is triggered when the button is clicked.
+Note: Read Bootstrap Modal Methods for more information on how to implement the JavaScript methods.
+
+Task 3
+In this task you will add appropriate JavaScript code to the page so that the Login modal will be shown/hidden when the Login link is clicked:
+You will add the appropriate JavaScript code to the end of the page.
+You will update the Login link so that the modal is triggered when the link is clicked.
+
+Submission
+You should submit the updated index.html file with all the tasks completed. A reviewer should easily be able to take your file and substitute it into their own web project and see it working correctly.
+Review Criteriaменьше 
+Upon completion of the assignment, your submission will be reviewed based on the following criteria:
+
+Task 1:
+The data-* attributes have been removed from the Reserve Table button.
+The data-* attributes have been removed from the Login link.
+
+Task 2: 
+Appropriate JavaScript code has been added to the page to trigger the Reserve Table modal.
+The Reserve Table button has been appropriately updated to enable the triggering of the modal.
+
+Task 3:
+Appropriate JavaScript code has been added to the page to trigger the Login modal.
+The Login link has been appropriately updated to enable the triggering of the modal.
+
